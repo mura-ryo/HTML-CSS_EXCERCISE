@@ -23,10 +23,6 @@ main {
   background-color: #eee;
 }
 
-.step-box:last-child {
-  margin-right: 0;
-}
-
 .step-img1 {
   height: 150px;
   background-image: url(../picture/flow01.png);
@@ -63,4 +59,43 @@ main {
 footer {
   height: 50px;
   background-color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+  display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  main {
+     display: block;
+     width: 100%;
+   }
+
+  .step-box {
+  justify-content: center;
+     width: 90%;
+    margin: 20px auto;
+  }
+
+  .step-img1 {
+    height: 150px;
+  }
+
+  .step-img2 {
+    height: 150px;
+  }
+
+  .step-img3 {
+    height: 150px;
+  }
+
+ footer {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-top: 50px;
+  }
+
 }
